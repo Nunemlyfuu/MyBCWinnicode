@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Akhir</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="wrapper">
+        <div class="left">
+          <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <a href="index.html" class="logo">
+            <img src="image/Warkop 10DR.png" alt="Logo">
+          </a>
+        </div>
+        <div class="right">
+          <img src="image/profil.jpg" alt="Profile Picture" class="pp_header">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="dropdown-container" id="dropdown-container">
+    <ul class="menu-list" id="menu-list">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li>
+        <a href="#" class="has-submenu">Attendance</a>
+        <ul class="submenu-list">
+          <li><a href="mark attendance.html">Mark Attendance</a></li>
+          <li><a href="history attendance.html">History Attendance</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="has-submenu">Settings</a>
+        <ul class="submenu-list">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="password.html">Password</a></li>
+        </ul>
+      </li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="fsi">
+      <nav class="py-8 ng-blue mb-6 z-index-0" style="background-image: none;">    
+        <div class="container">
+          <div class="row-align-items-end">
+            <div class="col-md mb-md-0">
+              <h3 class="fw-bolder text-white mb-0" data-asw-orogfontsize="20" style="font-size: 20;"> Jadwal Absensi</h3> 
+            </div>
+            <div class="col-md-auto col-sm-12">
+              <div class="d-lg-flex rounded">
+                <div class="d-lg-flex flex-wrap">
+                  <div>
+                    <div class="d-flex align-itmes-center h-50p">
+                      <div class="form-floating col-12">
+                        <select class="form-select form-select-sm form-control-sm ps-5 shadow-none text-primary fw-medium rounded-xl">
+                          <option value="2024-01">January 2024</option>
+                          <option value="2024-02">February 2024</option>
+                          <option value="2024-03">March 2024</option>
+                          <option value="2024-04">April 2024</option>
+                          <option value="2024-05">May 2024</option>
+                          <option value="2024-06">June 2024</option>
+                          <option value="2024-07">July 2024</option>
+                          <option value="2024-08">August 2024</option>
+                          <option value="2024-09">September 2024</option>
+                          <option value="2024-10">Oktober 2024</option>
+                          <option value="2024-11">November 2024</option>
+                          <option value="2024-12">December 2024</option>
+                        </select>
+                        <label class="ps-5">Pilih Bulan</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 z-index-2">
+            <section>
+              <div class="container container-wd">
+                <div class="mx-n3 flickity-enabled is-draggable" tabindex="0">
+                  <div class="flickity-viewport" style="height: 120px; touch-action: pan-y;">
+                    <!--   JULY MONTHS     -->>
+                    <div class="flickity-slider">
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element" value="2024-07-01">
+                            <div class="card-date align align-items-center text-center rounded-lg place-center">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719763200000">01</time>
+                              </p>
+                              <span class="mb-0 fw-normal">
+                                <time datetime="1719763200000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">02</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">03</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">04</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">05</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">06</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">07</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">08</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">09</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">10</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">11</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">12</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">13</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">14</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">15</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">16</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">17</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">18</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">19</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">20</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">21</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">22</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">23</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">24</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">25</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">26</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">27</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">28</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">29</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">30</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-auto mb-3 mx-2" style="position: relative; flex: 0 0 auto;">
+                        <label class="date-label">
+                          <div class="rounded-lg d-flex place-center">
+                            <input type="radio" name="date[]" class="card-input-element d-none" value="2024-07-02">
+                            <div class="card-date align-items-center text-center rounded-lg place-center w-100p h-100p py-4">
+                              <p class="mb-0 fw-bolder font-size-xxl">
+                                <time datetime="1719849600000">31</time>
+                              </p>
+                              <span class="mb-0 fw-normal" data-asw-orogfontsize="12" style="font-size: 12px;">
+                                <time datetime="1719849600000">Juli</time>
+                              </span>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <ol class="flickity-page-dots" data-asw-orogfontsize="16" style="font-size: 16px">
+                    <li class="dot" aria-label="Page dot 1" data-asw-orogfontsize="14" style="font-size: 14px"></li>
+                    <li class="dot" aria-label="Page dot 2" data-asw-orogfontsize="14" style="font-size: 14px"></li>
+                    <li class="dot is-selected" aria-label="Page dot 3" data-asw-orogfontsize="14" style="font-size: 14px" area-current="step"></li>
+                    <li class="dot" aria-label="Page dot 4" data-asw-orogfontsize="14" style="font-size: 14px"></li>
+                    <li class="dot" aria-label="Page dot 5"></li>
+                    <li class="dot" aria-label="Page dot 6"></li>
+                    <li class="dot" aria-label="Page dot 7"></li>
+                    <li class="dot" aria-label="Page dot 8"></li>
+                    <li class="dot" aria-label="Page dot 9"></li>
+                    <li class="dot" aria-label="Page dot 10"></li>
+                    <li class="dot" aria-label="Page dot 11"></li>
+                    <li class="dot" aria-label="Page dot 12"></li>
+                    <li class="dot" aria-label="Page dot 13"></li>
+                    <li class="dot" aria-label="Page dot 14"></li>
+                    <li class="dot" aria-label="Page dot 15"></li>
+                    <li class="dot" aria-label="Page dot 16"></li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </main>
+  <footer>
+    <h3>Copyright reserved to Najwan Firdaus only</h3>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('dropdown-container').classList.toggle('show');
+    });
+
+    // Add event listener for submenu toggle
+    document.querySelectorAll('.has-submenu').forEach(function(item) {
+      item.addEventListener('click', function(event) {
+        event.preventDefault();
+        item.nextElementSibling.classList.toggle('show');
+      });
+    });
+
+    function myFunction() {
+      var x = document.getElementById("menu-list");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>

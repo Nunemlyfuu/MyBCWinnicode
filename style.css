@@ -1,0 +1,348 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a6a6a6;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0 !important;
+  z-index: 1000;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.pp_header {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.fsi img {
+  width: 100%;
+  height: calc(100vh - 60px);
+  object-fit: cover;
+}
+
+/* Dropdown Menu */
+.dropdown-container {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color: #bfbfbf;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  overflow-y: auto;
+  padding: 10px 0;
+}
+
+.dropdown-container.show {
+  display: block;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  flex-direction: column;
+}
+
+.menu-list li {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.menu-list li a:hover {
+  color: #007BFF;
+}
+
+.submenu-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px; /* Indentation for submenu */
+}
+
+.submenu-list.show {
+  display: block;
+}
+
+.submenu-list li {
+  padding: 5px 0;
+}
+
+.submenu-list li a {
+  color: black;
+}
+
+.submenu-list li a:hover {
+  color: #007BFF;
+}
+
+/* Profile Card Styles */
+.account-settings {
+  padding: 1rem;
+}
+
+.account-settings .user-profile {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.account-settings .user-profile .user-avatar {
+  margin: 0 0 1rem 0;
+}
+
+.account-settings .user-profile .user-avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+}
+
+.account-settings .user-profile h5.user-name {
+  margin: 0 0 0.5rem 0;
+}
+
+.account-settings .user-profile h6.user-email {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #9fa8b9;
+}
+
+.account-settings .about {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+.account-settings .about h5 {
+  margin: 0 0 15px 0;
+  color: #007ae1;
+}
+
+.account-settings .about p {
+  font-size: 0.825rem;
+}
+
+.form-control {
+  border: 1px solid #cfd1d8;
+  border-radius: 2px;
+  font-size: 0.825rem;
+  background: #ffffff;
+  color: #2e323c;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #5a6268;
+}
+
+/* Flexbox for Profile and Personal Details */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.col-xl-3,
+.col-xl-9 {
+  flex: 0 0 auto;
+}
+
+.col-xl-3 {
+  width: 25%;
+}
+
+.col-xl-9 {
+  width: 75%;
+}
+
+/* Container for the calendar slider */
+.flickity-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100%; /* Ensure the slider takes up the full height of its container */
+}
+
+/* Each slide in the slider */
+.flickity-slider .col-auto {
+  position: relative;
+  width: auto; /* Adjust based on the number of slides and desired size */
+  flex: 0 0 auto; /* Prevent slides from stretching or shrinking */
+}
+
+/* Style for the date label container */
+.date-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full height of the slide */
+  padding: 10px; /* Add padding around the date */
+}
+
+/* Style for the card date */
+.card-date {
+  background-color: #ffffff; /* White background for a clean look */
+  border: 1px solid #ddd; /* Light border for definition */
+  padding: 20px; /* Padding inside the card */
+  width: 100%; /* Full width of the slide */
+  height: 100%; /* Full height of the slide */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for date text */
+.card-date p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px; /* Adjust based on your design */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Style for month text */
+.card-date span {
+  margin: 0;
+  font-size: 14px; /* Adjust based on your design */
+  color: #666; /* Lighter text color for contrast */
+}
+
+/* Hide the radio button but keep it accessible */
+.card-input-element {
+  display: none;
+}
+
+/* Ensure the label is clickable and occupies full space */
+.date-label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .card-date {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .card-date p {
+    font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .card-date span {
+    font-size: 12px; /* Smaller font size for smaller screens */
+  }
+}
